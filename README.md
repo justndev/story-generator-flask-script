@@ -1,6 +1,7 @@
 # 🧠 Story Generator Flask API
 
 A Python Flask-based API that generates short narrated videos with captions, using background videos, OpenAI text-to-speech, and FFmpeg for media processing.
+It is a microservice part of Story Generator project. It specifically used for generating videos. Example of generated video can be seen here: https://drive.google.com/file/d/1cQNQwtLhTILZgekAuNhYGvPC-SLked3F/view?usp=sharing
 
 ## 🚀 Features
 
