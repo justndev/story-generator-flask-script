@@ -1,0 +1,16 @@
+# Bytecode and cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+
+# Environment variables
+.env
+
+# Ignore videos and temp outputs
+src/bg_videos/*.mp4
+src/bg_videos/temp_voices/
+src/bg_videos/temp_voiced_videos/
+src/bg_videos/temp_captured_videos/
+src/bg_videos/temp_ready_videos/
