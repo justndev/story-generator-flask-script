@@ -28,7 +28,7 @@ requirements.txt                # Python dependencies
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/story-generator-flask-script-api.git
+   git clone https://github.com/justndev/story-generator-flask-script-api.git
    cd story-generator-flask-script-api
    ```
 
