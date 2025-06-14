@@ -50,10 +50,25 @@ requirements.txt                # Python dependencies
    ```ini
    OPENAI_API_KEY=your_openai_api_key_here
    ```
-
-5. **Run the Flask API**
+   
+5. **Install modules**
    ```bash
-   python src/app.py
+   sudo apt install whisper
+   sudo apt install imagemagick
+   sudo apt install ffmpeg
+   sudo nano /etc/ImageMagick-6/policy.xml
+   # remove "<policy domain="path" rights="none" pattern="@*" />" line
+
+
+   ```
+   
+6. **Add background videos**
+Add background videos in src/bg_videos folder and link them in src/bg_videos/links.py. So when new request comes the corresponding video (by id you named in links) will be used.
+
+7. **Run the Flask API**
+   ```bash
+   cd src # Important for directory location finding
+   python app.py
    ```
 
 ## 🧠 How It Works
@@ -150,9 +165,12 @@ src/bg_videos/temp_captured_videos/
 src/bg_videos/temp_ready_videos/
 ```
 
-## 📞 Support
+## Common issues
 
-For issues, please open a GitHub issue or submit a pull request with improvements.
+- New incompatible version of libraries (like moviepy, openai)
+- App launched from root folder, when should be from src
+- Host have not installed modules (whisper, ffmpeg, imagemagick)
+- Host have not updated ImageMagick policy
 
 ## 📝 License
 
